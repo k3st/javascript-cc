@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cart Quantity</title>
+</head>
+<body>
+    <button onclick="
+        console.log(display_cart(cart_item));
+        ">Show Quantity</button>
+
+    <button onclick="
+    cart_item = cart_item + 1;
+    console.log(display_cart(cart_item));
+    "">Add to Cart</button>
+
+    <button onclick="
+    cart_item = cart_item + 2;
+    console.log(display_cart(cart_item));
+    ">+2</button>
+
+    <button onclick="
+    cart_item = cart_item + 3; 
+    console.log(display_cart(cart_item));
+    ">+3</button>
+
+    <Button onclick="
+    cart_item = 0;
+    console.log(display_cart(cart_item));
+    "
+    >RESET Cart</Button>
+    
+    <script>
+
+        let cart_item = 0;
+
+        function display_cart
+        (cart_item){
+            return "Quantity: " + cart_item;
+        };
+
+
+
+
+
+    </script>    
+</body>
+</html>
+
+<!-- 02:03:25:00 / hr:mm:ss:ms -->

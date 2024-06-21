@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dom</title>
+</head>
+
+<body>
+    <p>Youtube Subscribed Button</p>
+    <button onclick="
+        subscribe();
+    " class="js-sub-button">Subscribe</button>
+
+    <p>Rock Paper Scissors</p>
+    <p>Amazon Shipping Calculator
+        <br>Orders under $40 = +$10 Shipping
+        <br>Orders above $40 = Free Shipping
+    </p>
+    <input placeholder="Cost of Order" onkeydown="
+    handleCostKeyDown(event);
+    " class="js-cost-input">
+    <button onclick="
+        calculateTotal();
+    ">Calculate</button>
+    <p class="js-total-cost"> </p>
+
+    <script>
+        function handleCostKeyDown(event) {
+            if (event.key === 'Enter') {
+                calculateTotal();
+            }
+
+        }
+
+
+        function calculateTotal() {
+            const inputElem = document.querySelector('.js-cost-input');
+            let cost = Number(inputElem.value);
+
+            if (cost < 40) {
+                cost = cost + 10;
+            } else cost = cost;
+
+            document.querySelector('.js-total-cost')
+                .innerHTML = `$${cost}`;
+
+
+        }
+
+        function subscribe() {
+            const buttonElem = (document.querySelector('.js-sub-button'));
+            if (buttonElem.innerText === 'Subscribe') {
+                buttonElem.innerHTML = 'Subscribed';
+            } else {
+                buttonElem.innerHTML = 'Subscribe';
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -97,8 +97,5 @@ const businessCart = new Cart('cart-business');
 
 
 // validating if "cart" and "businessCart" class has been created // 
-console.log(cart);
-console.log(businessCart);
-
-
-
+// console.log(cart);
+// console.log(businessCart);

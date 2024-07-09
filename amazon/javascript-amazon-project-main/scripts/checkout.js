@@ -5,9 +5,12 @@ import { renderPaymentSummary } from "./checkout/paymentSummary.js";
 // import "../data/backend-practice.js";
 
 async function loadPage(){
-    console.log('load page');
-
+    try{      
     await loadProductsFetch();
+    console.log('success')
+    } catch (error){
+        console.log('Unexpected Error \n',error)
+    }    
     renderOrderSummary();
     renderPaymentSummary();
 

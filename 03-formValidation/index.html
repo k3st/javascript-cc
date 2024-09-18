@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="bg.png" />
+      <form id="mainForm" novalidate>
+        <h2>Javascript Form Validator</h2>
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your Name"
+            autocomplete="off"
+          />
+          <i class="icon"></i>
+        </div>
+        <div class="form-control">
+          <label for="Email">Email</label>
+          <input
+            type="text"
+            id="Email"
+            placeholder="Enter your Email"
+            autocomplete="off"
+          />
+          <i class="icon"></i>
+        </div>
+        <div class="form-control">
+          <label for="Phone">Phone</label>
+          <input
+            type="tel"
+            id="Phone"
+            placeholder="Enter your Phone"
+            autocomplete="off"
+          />
+          <i class="icon"></i>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            autocomplete="off"
+          />
+          <i class="icon"></i>
+        </div>
+        <div class="form-control">
+          <label for="message">Message</label>
+          <textarea
+            type="text"
+            id="message"
+            placeholder="Enter your message"
+          ></textarea>
+          <i class="icon"></i>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times; </span>
+        <h2>Success!</h2>
+        <p>Your form has been submitted successfully.</p>
+      </div>
+    </div>
+
+    <script></script>
+    <script src="script.js"></script>
+  </body>
+</html>

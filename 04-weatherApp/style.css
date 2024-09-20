@@ -170,6 +170,12 @@ body {
   animation-delay: 0.5s;
 }
 
+footer {
+  position: absolute;
+  margin: 0;
+  display: block;
+}
+
 @keyframes fadeIn {
   to {
     scale: 1;

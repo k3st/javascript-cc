@@ -82,6 +82,7 @@ body {
 }
 
 .weather-box .temperature {
+  text-align: center;
   position: relative;
   color: #000;
   font-size: 4rem;
@@ -145,8 +146,8 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 50px;
-  scale: 0;
-  opacity: 0;
+  /* scale: 0;
+  opacity: 0; */
   display: none;
 }
 
@@ -165,9 +166,15 @@ body {
   opacity: 0;
 }
 
-.fade-in {
+.fadeIn {
   animation: 0.5s fadeIn forwards;
   animation-delay: 0.5s;
+}
+
+footer {
+  position: absolute;
+  margin: 0;
+  display: block;
 }
 
 @keyframes fadeIn {

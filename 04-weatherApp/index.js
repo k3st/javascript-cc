@@ -5,7 +5,8 @@ const weatherDetails = document.querySelector(".weather-details");
 const error404 = document.querySelector(".not-found");
 
 async function fetchWeather(city) {
-  const APIKey = "?key=" + "adf637bee2394fe3b39165254242009";
+  const KEY = env.WEATHER_API_KEY;
+  const APIKey = "?key=" + KEY;
 
   const APIUrl = "http://api.weatherapi.com/v1";
   const type = "/current.json";
